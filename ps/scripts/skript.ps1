@@ -37,7 +37,8 @@ function Show-Logo() {
 
 try {
     Clear-Host
-	Show-Logo
+    Show-Logo
+    Read-Host -Prompt "Press any key to close"
 } catch {
     $e = $_
     Write-Error $e.Exception.Message
